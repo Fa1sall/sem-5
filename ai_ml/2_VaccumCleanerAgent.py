@@ -1,35 +1,35 @@
-def main():
-    floor = []
-    m = int(input("Enter No. of Rows: "))
-    n = int(input("Enter No. of Columns: "))
-    print("Enter status of each block (1 => dirty, 0 => clean)")
+def initialize_grid():
+    rows = int(input("Enter number of rows: "))
+    cols = int(input("Enter number of columns: "))
+    
+    grid = []
+    print("Enter the grid values row by row (separate values with spaces):")
+    for _ in range(rows):
+        row = list(map(int, input().strip().split()))
+        grid.append(row)
+    
+    return grid
 
-    for i in range(m):
-        f = list(map(int,input().split(" ")))
-        floor.append(f)
-        
-    clean(floor)
+def print_grid(grid):
+    for row in grid:
+        print(row)
 
-def print_Floor(floor,row,column):
-    print("The Floor Status:")
-    for i in range(len(floor)):
-        for j in range(len(floor[i])):
-            if(i==row & j==column):
-                if(floor[i][j]==1):
-                    print(f" >{floor[i][j]}< ",end='')
-                else:
-                    print(f"  {floor[i][j]}  ",end='')
-            else:
-                print(f"  {floor[i][j]}  ",end='')
-        print(end='\n')
-    print(end='\n')
+def clean_all(grid):
+    for x in range(len(grid)):
+        for y in range(len(grid[0])):
+            if grid[x][y] == 1:
+                grid[x][y] = 0
+                print(f"Position ({x}, {y}) cleaned.")
 
-def clean(floor):
-    for i in range (len(floor)):
-        for j in range (len(floor[i])):
-            print_Floor(floor,i,j)
-            if(floor[i][j]==1):
-                floor[i][j]=0
-                print_Floor(floor,i,j)
+def vacuum_cleaner_problem():
+    grid = initialize_grid()
+    print("\nInitial grid:")
+    print_grid(grid)
+    
+    print("\nCleaning process:")
+    clean_all(grid)
+    
+    print("\nFinal grid:")
+    print_grid(grid)
 
-main()
+vacuum_cleaner_problem()
