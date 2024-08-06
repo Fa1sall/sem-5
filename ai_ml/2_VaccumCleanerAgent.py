@@ -1,10 +1,9 @@
 def initialize_grid():
     rows = int(input("Enter number of rows: "))
-    cols = int(input("Enter number of columns: "))
     
     grid = []
     print("Enter the grid values row by row (separate values with spaces):")
-    for _ in range(rows):
+    for i in range(rows):
         row = list(map(int, input().strip().split()))
         grid.append(row)
     
@@ -21,7 +20,7 @@ def clean_all(grid):
                 grid[x][y] = 0
                 print(f"Position ({x}, {y}) cleaned.")
 
-def vacuum_cleaner_problem():
+def vacuum_cleaner_agent():
     grid = initialize_grid()
     print("\nInitial grid:")
     print_grid(grid)
@@ -32,4 +31,4 @@ def vacuum_cleaner_problem():
     print("\nFinal grid:")
     print_grid(grid)
 
-vacuum_cleaner_problem()
+vacuum_cleaner_agent()
