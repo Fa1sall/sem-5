@@ -1,0 +1,98 @@
+body{
+    text-align:center;
+}
+
+form{
+    display: inline-block;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    box-sizing: border-box;
+    width: 600px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"],input[type="password"]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  label {
+    margin: 0px 1em 0px 0px;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: sans-serif;
+  }
+  
+  input[type=submit] {
+    background-color: #25c98d;
+    color: rgb(5, 5, 5);
+    border: solid;
+    border-color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-top: 1em;
+    box-sizing: border-box;
+    width: 6rem;
+    height: 3rem;
+    font-weight: bold;
+    font-size: medium;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .submit-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75{
+      width: 100%;
+      margin-top: 0;
+      flex-direction: column;
+    }
+
+    form{
+        width: 400px;
+    }
+
+    input {
+        margin-bottom: 0.9rem;
+    }
+    label{
+        margin-bottom: 0.2rem;
+    }
+  }
+
