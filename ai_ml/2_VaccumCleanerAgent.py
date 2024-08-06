@@ -1,7 +1,7 @@
 def initialize_grid():
     rows = int(input("Enter number of rows: "))
-    
     grid = []
+    
     print("Enter the grid values row by row (separate values with spaces):")
     for i in range(rows):
         row = list(map(int, input().strip().split()))
