@@ -6,54 +6,71 @@
     <title>Form</title>
     <link rel="stylesheet" href="exp2.css">
 </head>
-<body>
-    <div class="form">
-        <form>
-            <div class="row">
-                <div class="col-25">
-                    <label for="fname">First Name </label>
-                </div>
-                <div class="col-75">
-                    <input type="text" id="fname" placeholder="First Name">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="lname">Last Name </label>
-                </div>
-                <div class="col-75">
-                    <input type="text" id="lname" placeholder="Last Name">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="email">Email </label>
-                </div>
-                <div class="col-75">
-                    <input type="email" id="email" placeholder="user@email.com">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="mobile Num">Mobile Number </label>
-                </div>
-                <div class="col-75">
-                    <input type="tel" title="Please enter a 10 digit number" id="mobileNum" placeholder="Mobile Number" pattern="[0-9]{10}" required>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="password">Password </label>
-                </div>
-                <div class="col-75">
-                    <input type="password" id="password" placeholder="Password">
-                </div>
-            </div>
-            <div class="submit-row">
-                <input type="submit" value="Submit">
-            </div>
-        </form>
-        </form>
+<body> 
+    <div class="tt">
+        <table>
+            <h1>Time Table</h1>
+            <tr>
+              <td><b>Day</b></td>
+              <td><b>9.00-9.50</b></td>
+              <td><b>9.50-10.40</b></td>
+              <td><b>10.40-11.00</b></td>
+              <td><b>11.00-11.50</b></td>
+              <td><b>11.50-12.40</b></td>
+              <td><b>12.40-1.40</b></td>
+              <td><b>1.40-2.30</b></td>
+              <td><b>2.30-3.20</b></td>
+              <td><b>3.20-4.10</b></td>
+            </tr>
+            <tr>
+              <td><b>Mon</b></td>
+              <td colspan="2">CSD-3103</td>
+              <td rowspan="6">Break</td>
+              <td colspan="2">GED-3101</td>
+              <td rowspan="6">Lunch</td>
+              <td>CSD-3101</td>
+              <td>SEM</td>
+              <td>CSD-3102</td>
+            </tr>
+            <tr>
+              <td><b>Tue</b></td>
+              <td>CSDX-106</td>
+              <td>CSD-3101</td>
+              <td>CSD-3104</td>
+              <td>CSDX-113</td>
+              <td>CSD-3102</td>
+              <td>CSD-3103</td>
+              <td>LIB</td>
+              
+            </tr>
+            <tr>
+              <td><b>Wed</b></td>
+              <td>CSD-3102</td>
+              <td>CSD-3104</td>
+              <td colspan="2">CSD-3105</td>
+              <td>CSDX-106</td>
+              <td>CSD-3103</td>
+              <td>CSD-3107</td>
+            </tr>
+            <tr>
+              <td><b>Thu</b></td>
+              <td>CSD-3103</td>
+              <td>SEM</td>
+              <td>SEM</td>
+              <td>CSD-3101</td>
+              <td>CSDX-103</td>
+              <td>CSD-3107</td>
+              <td>CSDX-113</td>
+            </tr>
+            <tr>
+              <td><b>Fri</b></td>
+              <td colspan="2">CSD-3107</td>
+              <td>CSD-3104</td>
+              <td>CSDX-113</td>
+              <td id="Prayer">Prayer</td>
+              <td colspan="2">CSD-3103</td>
+            </tr>
+          </table>
     </div>
 </body>
 </html>
