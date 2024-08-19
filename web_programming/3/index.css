@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+body{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.pf{
+    display: flex;
+    justify-content: space-evenly;
+    border: 3px solid #052e16;
+    width: 700px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#pfp{
+    width: 170px;
+}
+
+#name{
+    text-align: center;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.information{
+    display: flex;
+    align-items: center;
+    padding-left: 1.3em;
+    border-left: 2px solid black;
+}
+
+.info-block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-left: 3px solid #052e16;
+    align-items: center;
+    justify-self: center;
+}
+
+.information, .projects{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.heading{
+    font-family: "Lilita One";
+    font-size: 1.7rem;
+    text-align: center;
+    color: black;
+    display: block;
+}
+
+.info-comp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8rem;
+}
+
+.info-comp .content{
+    color: rgb(27, 27, 27);
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2rem;
+}
+
+.info-comp .header{
+    color: black;
+    text-align: center;
+    font-family: chewy;
+    font-size: 1.4rem;
+}
