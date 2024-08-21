@@ -1,12 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+body{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
 .pf{
     display: flex;
+    justify-content: space-evenly;
     border: 3px solid #052e16;
+    width: 700px;
 }
 
 .profile{
     display: flex;
     flex-direction: column;
-    margin: 2%;
+    margin: 1%;
     align-items: center;
     justify-content: space-around;
 }
@@ -24,14 +36,16 @@
 .information{
     display: flex;
     align-items: center;
+    padding-left: 1.3em;
+    border-left: 2px solid black;
 }
 
 .info-block{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-left: 3em;
     border-left: 3px solid #052e16;
     align-items: center;
+    justify-self: center;
 }
 
 .information, .projects{
@@ -41,22 +55,30 @@
 }
 
 .heading{
-    font-size: 1.5rem;
+    font-family: "Lilita One";
+    font-size: 1.7rem;
     text-align: center;
-    color: #052e16;
+    color: black;
+    display: block;
 }
 
 .info-comp{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8rem;
 }
 
 .info-comp .content{
-    color: #166534;
+    color: rgb(27, 27, 27);
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2rem;
 }
 
 .info-comp .header{
-    color: #14532d;
-    font-weight: bold;
+    color: black;
+    text-align: center;
+    font-family: chewy;
+    font-size: 1.4rem;
 }
