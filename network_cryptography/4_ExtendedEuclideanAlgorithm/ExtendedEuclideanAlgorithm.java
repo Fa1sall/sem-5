@@ -11,7 +11,6 @@ public class ExtendedEuclideanAlgorithm {
         long b = scanner.nextInt();
         gcdExtended(a, b);
     }
-
     public static void gcdExtended(long a, long b)
     {
         long x = 0, y = 1, lastx = 1, lasty = 0, temp;
