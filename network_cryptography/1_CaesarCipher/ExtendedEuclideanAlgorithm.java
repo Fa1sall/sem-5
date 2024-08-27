@@ -14,6 +14,8 @@ public class ExtendedEuclideanAlgorithm {
     public static void gcdExtended(long a, long b)
     {
         long x = 0, y = 1, lastx = 1, lasty = 0, temp;
+        long modInverse = 0;
+        long min = Math.min(a,b);
         while (b != 0)
         {
             long q = a / b;
@@ -30,7 +32,13 @@ public class ExtendedEuclideanAlgorithm {
             y = lasty - q * y;
             lasty = temp;
         }
+        if(lastx<0){
+            modInverse = min + lastx;
+        } else {
+            modInverse = lastx;
+        }
         System.out.println("GCD "+a+" and its Roots x: "+ lastx +" y:"+ lasty);
+        System.out.println("Multiplicative Inverse: " + modInverse);
     }
 }
 
