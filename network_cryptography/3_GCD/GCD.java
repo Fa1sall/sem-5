@@ -17,6 +17,5 @@ public class GCD{
         } else{
             return gcd(b,Math.abs(a-b));
         }
-
     }
 }
