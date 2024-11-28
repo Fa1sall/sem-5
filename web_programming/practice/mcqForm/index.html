@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="mcq-container">
+        <h1>MCQ form</h1>
+        <div class="timer">Time Left: <span id="time">5:00</span></div>
+        <form id="mcqForm" onsubmit="return false;">
+            <div class="question">
+                <p>What is 1+1</p>
+                <input type="radio" id="q1a" name="q1" value="incorrect"></input>
+                <label for="q1a">1</label>
+                <input type="radio" id="q1b" name="q1" value="correct"></input>
+                <label for="q1b">2</label>
+                <input type="radio" id="q1c" name="q1" value="incorrect"></input>
+                <label for="q1c">3</label>
+                <input type="radio" id="q1d" name="q1" value="incorrect"></input>
+                <label for="q1d">4</label>
+            </div>
+            <div class="question">
+                <p>What is 2*2</p>
+                <input type="radio" id="q2a" name="q2" value="correct"></input>
+                <label for="q1a">4</label>
+                <input type="radio" id="q2b" name="q2" value="incorrect"></input>
+                <label for="q1a">3</label>
+                <input type="radio" id="q2c" name="q2" value="incorrect"></input>
+                <label for="q1a">5</label>
+                <input type="radio" id="q2d" name="q2" value="incorrect"></input>
+                <label for="q1a">0</label>
+            </div>
+            <button onclick="submitQuiz()">Submit</button>
+            <div id="result"></div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

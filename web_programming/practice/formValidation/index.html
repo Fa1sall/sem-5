@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>Job Application Form</header>
+    <form onsubmit="return validateForm(event)">
+        <p>
+            <label for="name">Enter name:</label>
+            <input type="text" id="name" name="Name">
+            <span id="nameError"></span>
+        </p>
+        <p>
+            <label for="email">Enter Email:</label>
+            <input type="email" id="email" placeholder="abcd@gmail.com">
+            <span id="emailError"></span>
+        </p>
+        <p>
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" placeholder="">
+            <span id="passwordError"></span>
+        </p>
+        <p>
+            <label for="subject">Education:</label>
+            <select id="subject" name="subject">
+                <option value="">Select degree</option>
+                <option value="BTECH">BTECH</option>
+                <option value="MTECH">MTECH</option>
+                <option value="BCA">BCA</option>
+                <option value="BTECH">BSC</option>
+            </select>
+        </p>
+        <p>
+            <label for="address">Enter Address:</label>
+            <textarea id="address"></textarea>
+            <span id="addressError"></span>
+        </p>
+        
+        
+        <button type="submit" name="Submit">Submit</button>
+        <button type="reset" name="Reset">Reset</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

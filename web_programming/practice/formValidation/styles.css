@@ -1,0 +1,12 @@
+header{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+    background-color: rgb(206, 204, 204);
+    width: 300px;
+    justify-self: center;
+    border: 2px solid black;
+    height: 250px;
+}
