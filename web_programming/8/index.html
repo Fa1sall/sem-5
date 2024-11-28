@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online MCQ Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="test-container">
+        <h1>Online MCQ Test</h1>
+        <div class="timer">
+            Time Remaining: <span id="time">05:00</span>
+        </div>
+
+        <form id="mcqForm" onsubmit="return false;">
+            <div class="question">
+                <p>1. What does HTML stand for?</p>
+                <input type="radio" id="q1a" name="q1" value="Correct">
+                <label for="q1a">Hyper Text Markup Language</label><br>
+                <input type="radio" id="q1b" name="q1" value="Incorrect">
+                <label for="q1b">Home Tool Markup Language</label><br>
+                <input type="radio" id="q1c" name="q1" value="Incorrect">
+                <label for="q1c">Hyperlinks and Text Markup Language</label><br>
+                <input type="radio" id="q1d" name="q1" value="Incorrect">
+                <label for="q1d">Hyperlink Text Mark Language</label>
+            </div>
+
+            <div class="question">
+                <p>2. Which CSS property is used to change the background color?</p>
+                <input type="radio" id="q2a" name="q2" value="Incorrect">
+                <label for="q2a">color</label><br>
+                <input type="radio" id="q2b" name="q2" value="Correct">
+                <label for="q2b">background-color</label><br>
+                <input type="radio" id="q2c" name="q2" value="Incorrect">
+                <label for="q2c">bg-color</label><br>
+                <input type="radio" id="q2d" name="q2" value="Incorrect">
+                <label for="q2d">background</label>
+            </div>
+
+            <div class="question">
+                <p>3. Inside which HTML element do we put the JavaScript code?</p>
+                <input type="radio" id="q3a" name="q3" value="Incorrect">
+                <label for="q3a">&lt;javascript&gt;</label><br>
+                <input type="radio" id="q3b" name="q3" value="Correct">
+                <label for="q3b">&lt;script&gt;</label><br>
+                <input type="radio" id="q3c" name="q3" value="Incorrect">
+                <label for="q3c">&lt;js&gt;</label><br>
+                <input type="radio" id="q3d" name="q3" value="Incorrect">
+                <label for="q3d">&lt;code&gt;</label>
+            </div>
+
+            <div class="question">
+                <p>4. Which JavaScript function is used to write something to the console?</p>
+                <input type="radio" id="q4a" name="q4" value="Incorrect">
+                <label for="q4a">console.write()</label><br>
+                <input type="radio" id="q4b" name="q4" value="Correct">
+                <label for="q4b">console.log()</label><br>
+                <input type="radio" id="q4c" name="q4" value="Incorrect">
+                <label for="q4c">console.print()</label><br>
+                <input type="radio" id="q4d" name="q4" value="Incorrect">
+                <label for="q4d">console.output()</label>
+            </div>
+
+            <button type="submit" onclick="submitQuiz()">Submit</button>
+        </form>
+
+        <div id="result"></div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
+

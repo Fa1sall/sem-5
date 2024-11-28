@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>INSTAGRAM</h1>
+        </header>
+
+        <section class="image-slider">
+            <img id="slider" src="image1.jpg" alt="Slider Image">
+        </section>
+
+        <div class="actions">
+            <button id="likeButton" class="like-btn">👍 Like <span id="likeCount">0</span></button>
+            <button class="comment-btn" onclick="toggleComments()">💬 Comment</button>
+        </div>
+
+        <div id="commentSection" class="comments hidden">
+            <textarea id="commentInput" placeholder="Add a comment..."></textarea>
+            <button onclick="addComment()">Post Comment</button>
+            <ul id="commentList"></ul>
+        </div>
+
+        <section class="time-display">
+            <p>Current Time: <span id="time"></span></p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
