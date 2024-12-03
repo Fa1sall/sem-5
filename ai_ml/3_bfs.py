@@ -1,10 +1,10 @@
 graph = {
-  '5' : ['3','7'],
-  '3' : ['2', '4'],
-  '7' : ['8'],
-  '2' : [],
-  '4' : ['8'],
-  '8' : []
+    'A' : ['B','C'],
+    'B' : ['D','E'],
+    'C' : ['F'],
+    'D' : [],
+    'E' : ['F'],
+    'F' : []
 }
 
 visited = []
@@ -18,10 +18,10 @@ def bfs(visited, graph, node):
     m = queue.pop(0) 
     print (m, end = " ") 
 
-    for neighbour in graph[m]:
-      if neighbour not in visited:
-        visited.append(neighbour)
-        queue.append(neighbour)
+    for next in graph[m]:
+      if next not in visited:
+        visited.append(next)
+        queue.append(next)
 
 print("Breadth First Search Traversal: ")
-bfs(visited, graph, '5')
+bfs(visited, graph, 'A')
